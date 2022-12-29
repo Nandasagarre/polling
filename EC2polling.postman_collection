@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "56406267-24fb-4d72-ae20-f9f116616fa6",
+		"name": "polling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18458545"
+	},
+	"item": [
+		{
+			"name": "seeall questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-84-18-60.compute-1.amazonaws.com:3000/api/seeallquest",
+					"protocol": "http",
+					"host": [
+						"ec2-3-84-18-60",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"seeallquest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addoption",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"63adef56cead975be5a03918\",\r\n    \"optiontext\": \"book2\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-84-18-60.compute-1.amazonaws.com:3000/api/addoptionto",
+					"protocol": "http",
+					"host": [
+						"ec2-3-84-18-60",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addoptionto"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "63ab32ca9e3ef225059efaa9",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addquestion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"which is best book\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-84-18-60.compute-1.amazonaws.com:3000/api/createquest",
+					"protocol": "http",
+					"host": [
+						"ec2-3-84-18-60",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createquest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addvoteto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questionId\": \"63adef56cead975be5a03918\",\r\n    \"optionId\": \"63adefc4cead975be5a03922\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-84-18-60.compute-1.amazonaws.com:3000/api/addvoteto",
+					"protocol": "http",
+					"host": [
+						"ec2-3-84-18-60",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"addvoteto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questionId\": \"63add033e6182de5fe03d73a\",\r\n    \"optionId\": \"63add058e6182de5fe03d73e\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-84-18-60.compute-1.amazonaws.com:3000/api/deleteoption",
+					"protocol": "http",
+					"host": [
+						"ec2-3-84-18-60",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteoption"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questionId\":\"63add2a8e6182de5fe03d7cb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://ec2-3-84-18-60.compute-1.amazonaws.com:3000/api/deleteQuestion",
+					"protocol": "http",
+					"host": [
+						"ec2-3-84-18-60",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"deleteQuestion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
