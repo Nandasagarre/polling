@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', require('./routes/index'));
 
-app.listen(8000, (err) => {
+app.listen(3000, (err) => {
     if (err) { console.log('error running port'); }
-    console.log('running in port 8000');
+    console.log('running in port 3000');
 })
 
 //fix link in votelink
